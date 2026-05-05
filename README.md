@@ -22,6 +22,8 @@ This project implements a modular data stack:
 
     - marts (Datamarts): Final Star Schema (Facts and Dimensions) optimized for BI and Data Science.
 
+    - analyses: focused on audits (for data quality purposes) and requests (ad-hoc requests)
+
 
 
 📊 Data Catalog
