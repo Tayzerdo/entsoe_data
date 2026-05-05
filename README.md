@@ -1,7 +1,9 @@
 ⚡ ENTSO-E Power Statistics ETL
+
 A modern data engineering project building a robust ETL pipeline to extract, transform, and model European power system data.
 
 🏗️ Project Architecture
+
 This project implements a modular data stack:
 
 Extraction: Python scripts fetching data from the [ENTSO-E Power Statistics](https://www.entsoe.eu/data/power-stats/) portal.
@@ -11,6 +13,7 @@ Storage: DuckDB as a high-performance, local analytical database (OLAP).
 Transformation: dbt (data build tool) for modeling, testing, and documenting the data lifecycle.
 
 📊 Data Catalog
+
 The pipeline processes five core datasets to provide a 360-degree view of the European grid:
 
 1. Actual Generation & Consumption
