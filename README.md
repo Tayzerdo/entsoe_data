@@ -8,11 +8,19 @@ A modern data engineering project building a robust ETL pipeline to extract, tra
 
 This project implements a modular data stack:
 
-Extraction: Python scripts fetching data from the [ENTSO-E Power Statistics](https://www.entsoe.eu/data/power-stats/) portal.
+- Extraction (Python): Custom scripts to fetch data [ENTSO-E Power Statistics](https://www.entsoe.eu/data/power-stats/).
 
-Storage: DuckDB as a high-performance, local analytical database (OLAP).
+- Storage: Data is stored locally in .parquet (high-performance) and .xlsx formats.
 
-Transformation: dbt (data build tool) for modeling, testing, and documenting the data lifecycle.
+- Orchestration & Transformation (dbt):
+
+    - raw: Initial landing of source data.
+
+    - stg (Staging): Column renaming, casting types, and handling mixed date formats.
+
+    - int (Intermediate): Ephemeral models for complex logic joins.
+
+    - marts (Datamarts): Final Star Schema (Facts and Dimensions) optimized for BI and Data Science.
 
 
 
