@@ -4,12 +4,12 @@ with monthly_domestic_values as (
 ),
 measure_items as (
     select *
-    from {{ ref('fct_measure_items') }}
+    from {{ ref('dim_measure_items') }}
     where category = 'Solar'
 ),
 country_codes as (
     select *
-    from {{ ref('fct_country_codes') }}
+    from {{ ref('dim_country_codes') }}
     where region = 'Europe'
 ),
 solar_data as (
