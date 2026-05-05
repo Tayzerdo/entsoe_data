@@ -2,6 +2,8 @@
 
 A modern data engineering project building a robust ETL pipeline to extract, transform, and model European power system data.
 
+
+
 🏗️ Project Architecture
 
 This project implements a modular data stack:
@@ -11,6 +13,8 @@ Extraction: Python scripts fetching data from the [ENTSO-E Power Statistics](htt
 Storage: DuckDB as a high-performance, local analytical database (OLAP).
 
 Transformation: dbt (data build tool) for modeling, testing, and documenting the data lifecycle.
+
+
 
 📊 Data Catalog
 
