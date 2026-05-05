@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_country_codes
+    description: '{{ doc("country_codes") }}'
+    columns:
+      - name: country_name
+        data_tests:
+          - unique
+          - not_null
+      - name: country_alpha2_code
+        data_tests:
+          - unique
+          - not_null
+  - name: stg_inventory_of_generation
+    description: '{{ doc("inventory_of_generation") }}'
+    columns:
+      - name: country_alpha2_code
+        data_tests:
+          - not_null
+  - name: stg_inventory_of_transmission
+    description: '{{ doc("inventory_of_transmission") }}'
+    columns:
+      - name: country_alpha2_code
+        data_tests:
+          - not_null
+  - name: stg_monthly_domestic_values
+    description: '{{ doc("monthly_domestic_values") }}'
+    columns:
+      - name: country_alpha2_code
+        data_tests:
+          - not_null
+  - name: stg_net_generation_capacity
+    description: '{{ doc("net_generation_capacity") }}'
+    columns:
+      - name: country_alpha2_code
+        data_tests:
+          - not_null
+  - name: stg_physical_energy_power_flows
+    description: '{{ doc("physical_energy_power_flows") }}'
+    columns:
+      - name: from_country_alpha2_code
+        data_tests:
+          - not_null
+      - name: to_country_alpha2_code
+        data_tests:
+          - not_null

@@ -1,0 +1,18 @@
+# dbt folders
+target/
+dbt_packages/
+logs/
+
+# DuckDB database files
+*.duckdb
+*.db
+
+# Data and exports
+data/
+exports/
+*.csv
+
+# Python environments
+venv/
+.env
+__pycache__/

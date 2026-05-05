@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+ - name: external_data
+   tables:
+    - name: monthly_domestic_values
+      description: '{{ doc("monthly_domestic_values") }}'
+      meta:
+        external_location: "data/monthly_domestic_values.parquet"
+    
+    - name: physical_energy_power_flows
+      description: '{{ doc("physical_energy_power_flows") }}'
+      meta:
+        external_location: "data/physical_energy_power_flows.parquet"
+
+    - name: net_generation_capacity
+      description: '{{ doc("net_generation_capacity") }}'
+      meta:
+        external_location: "data/net_generation_capacity.parquet"
+
+    - name: inventory_of_generation
+      description: '{{ doc("inventory_of_generation") }}'
+      meta:
+        external_location: "data/inventory_of_generation.parquet"
+
+    - name: inventory_of_transmission
+      description: '{{ doc("inventory_of_transmission") }}'
+      meta:
+        external_location: "data/inventory_of_transmission.parquet"
+    
+    - name: country_codes
+      description: '{{ doc("country_codes") }}'
+      meta:
+        external_location: "data/country_codes.csv"
+

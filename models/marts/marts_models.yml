@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fct_monthly_domestic_values
+    columns:
+      - name: category_id
+        tests:
+          - relationships:
+              to: ref('dim_measure_items')
+              field: category_id
+      - name: country_alpha2_code
+        tests:
+          - relationships:
+              to: ref('dim_country_codes')
+              field: country_alpha2_code
+      - name: amount
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0  
