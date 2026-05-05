@@ -41,3 +41,7 @@ The pipeline processes five core datasets to provide a 360-degree view of the Eu
 - Inventory of Generation: A detailed yearly breakdown of physical generation units and capacities aggregated by country.
 
 - Inventory of Transmission: Catalogs the physical grid assets, including circuit and route lengths across different voltage levels.
+
+  
+
+<img width="1386" height="299" alt="Screenshot 2026-05-05 at 23 48 22" src="https://github.com/user-attachments/assets/8ddfae32-974d-4aab-ad55-ba9cea4b2086" />
